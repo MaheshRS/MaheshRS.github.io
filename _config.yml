@@ -5,12 +5,18 @@ url: 'http://MaheshRS.github.io'
 # baseurl: 'http://MaheshRS.github.io'
 # google_analytics: 'UA-XXXXXX-X'
 
+# Author settings
 author:
-  name: 'Mahesh Shanbhag'
-  email: rayashanbhag@gmail.com
-  twitter_username: MaheshShanbhag
-  github_username:  MaheshRS
-  linkedin_username:  shanbhagmahesh
+  name      : Mahesh Shanbhag
+  job       : iOS Developer
+  bio       : "Responsive app design and usability, always looking for the engaging projects and good coffee."
+  thumb     : /images/author.jpg
+  email     : rayashanbhag@gmail.com
+  url       : http://MaheshRS.github.io
+  github    : http://github.com/MaheshRS
+  twitter   : http://twitter.com/ShanbhagMahesh
+  facebook  : https://www.facebook.com/ShanbhagMahesh
+  linkedin  : http://linkedin.com/in/maheshshanbhag
 
 # Build settings
 destination: _site
@@ -19,8 +25,23 @@ permalink: /:year/:title/
 markdown: kramdown
 highlighter: pygments
 
+sass:
+  sass_dir: _scss
+  style: compressed # expanded
+
 kramdown:
   # use Github Flavored Markdown
   input: GFM
   # do not replace newlines by <br>s
   hard_wrap: false
+
+  # navbar pages
+navbar:
+  - slug: about
+    title: About
+  # - slug: resume
+  #   title: Resume
+  # - slug: skills
+  #   title: Skills
+  - slug: blog
+    title: Blog
